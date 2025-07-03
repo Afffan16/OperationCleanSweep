@@ -6,13 +6,13 @@
 
 ### Duration
 
-July 4–9, 2025
+July 5–11, 2025
 
 ### Goals
 
 - Setup UE5 C++ Third Person Template
 - Learn engine basics (controls, components, folders)
-- Implement TPS movement (walk, jump, input bindings)
+- Implement TPS movement (walk, sprint, crouch, prone, jump, slide)
 
 ### Deliverables
 
@@ -29,26 +29,31 @@ July 4–9, 2025
 
 🚧 In Progress
 
+### Testing
+
+- Validate movement mechanics
+
 ---
 
-## Sprint 2: Player Combat, Health & Scope Mechanics
+## Sprint 2: Combat Mechanics, Health & Weapons
 
 ### Duration
 
-July 10–17, 2025
+July 12–18, 2025
 
 ### Goals
 
-- Add shooting system: fire logic, animations, muzzle flash
-- Health/damage system for player
-- Crouch and slide animations
+- Add shooting system: fire logic, recoil, hip fire spread, animations, muzzle flash
+- Health & damage system with limited healing
+- Implement weapon system (AR, pistol, knife) and ammo pickups
 - Scope aim: zoom + FPS camera switch
 
 ### Deliverables
 
 - Fully working combat and health logic
-- Scope-to-FPS functionality with smooth switch
-- Updated UI: health and crosshair
+- Weapon switching and ammo pickup functionality
+- Scope-to-FPS transition with smooth switch
+- Updated UI: health, ammo, basic audio/VFX
 
 ### Team
 
@@ -59,25 +64,29 @@ July 10–17, 2025
 
 ⏳ Upcoming
 
+### Testing
+
+- Test shooting, health, and weapon mechanics
+
 ---
 
-## Sprint 3: Environment Setup & AI Integration
+## Sprint 3: AI Bots & Initial Map
 
 ### Duration
 
-July 18–25, 2025
+July 19–25, 2025
 
 ### Goals
 
-- Import and place terrain map, spawn zones, base HQ
-- Set up patrol AI with basic behavior tree
-- Enemy gunfire logic + animations
-- Add death zone (water)
+- Import and place terrain map, spawn zones, HQ structure
+- Set up 25 AI bots with patrol, alert, attack states using Behavior Trees
+- Add enemy gunfire logic, damage, and death behavior
+- Implement death zone (river)
 
 ### Deliverables
 
-- Completed test map with spawn and enemy placement
-- Working AI with damage/death logic
+- Completed test map with spawn and 25 enemy placements
+- Working AI with basic combat logic
 
 ### Team
 
@@ -88,64 +97,169 @@ July 18–25, 2025
 
 ⏳ Upcoming
 
+### Testing
+
+- Test AI patrol, shooting, and death mechanics
+
 ---
 
-## Sprint 4: Game Logic, Team Stats & DSA Implementation
+## Sprint 4: Map Enhancements & Mini-Map
 
 ### Duration
 
-July 26–August 2, 2025
+July 26–August 1, 2025
 
 ### Goals
 
-- Add team stats system (kills, damage, alive)
-- Create Tab UI to show stats in real time
-- Hook up game states (start → win)
-- Integrate DSA logic in damage tracking and spawn logic
+- Add terrain boundaries (mountains), ammo/healing pickups
+- Implement mini-map (limited circle, expandable via 'M')
+- Refine map layout and death zone
 
 ### Deliverables
 
-- Game loop with functional win condition
-- Real-time UI for team tracking
-- DSA code samples documented
+- Functional map with boundaries, pickups, and mini-map
+- Basic UI integration
 
 ### Team
 
-- Affan: Logic, DSA integration
+- Affan: Map logic, mini-map implementation
+- Umar: Asset placement, UI Blueprint support
+
+### Status
+
+⏳ Upcoming
+
+### Testing
+
+- Test map navigation, pickups, and mini-map functionality
+
+---
+
+## Sprint 5: UI, Team Stats & Spectator Mode
+
+### Duration
+
+August 2–8, 2025
+
+### Goals
+
+- Develop Health & Ammo HUD, mission box (via 'Alt')
+- Create Tab Menu (name, kills, points, assists, alive/dead)
+- Implement spectator mode (camera switch on death)
+
+### Deliverables
+
+- Real-time UI for health, ammo, and team stats
+- Functional spectator mode
+
+### Team
+
+- Affan: UI logic, spectator mode
 - Umar: UI Blueprint layout, progress testing
 
 ### Status
 
 ⏳ Upcoming
 
+### Testing
+
+- Test UI elements and spectator mode
+
 ---
 
-## Sprint 5: Final Polish, Testing & Docs
+## Sprint 6: Reinforcements, Game States & Pause
 
 ### Duration
 
-August 3–10, 2025
+August 9–15, 2025
 
 ### Goals
 
-- Polish visuals, clean animations, audio balance
-- Fix major bugs, gameplay tuning
-- Update GDD, DSA doc, submit GitHub release
-- Optional: Create gameplay demo video
+- Add 15 reinforcement bots (7 + 8 sides) after clearing initial 25
+- Hook up game states (start, playing, win/loss)
+- Implement pause/resume functionality
 
 ### Deliverables
 
-- Final polished version of Level 1
-- Documentation folder + screenshots
+- Reinforcement wave logic
+- Game state transitions and pause/resume
 
 ### Team
 
-- Affan: Testing, docs, final balancing
-- Umar: Final polish suggestions, feedback loop
+- Affan: Logic, DSA integration
+- Umar: Blueprint support, testing
 
 ### Status
 
 ⏳ Upcoming
+
+### Testing
+
+- Test reinforcements, game states, and pause/resume
+
+---
+
+## Sprint 7: Objective Logic & Testing
+
+### Duration
+
+August 16–22, 2025
+
+### Goals
+
+- Implement objective: eliminate all 40 enemies to clear HQ
+- Add win/loss conditions
+- Conduct comprehensive testing and bug fixing
+
+### Deliverables
+
+- Functional win/loss logic
+- Tested core mechanics
+
+### Team
+
+- Affan: Objective logic, testing
+- Umar: Feedback loop, visual adjustments
+
+### Status
+
+⏳ Upcoming
+
+### Testing
+
+- Validate objective completion and game end states
+
+---
+
+## Sprint 8: Final Polish, Demo & Documentation
+
+### Duration
+
+August 23–29, 2025
+
+### Goals
+
+- Polish visuals, animations, audio balance
+- Record gameplay demo video
+- Finalize GDD, DSA documentation, and GitHub release
+
+### Deliverables
+
+- Polished Level 1
+- Demo video and complete documentation
+
+### Team
+
+- Affan: Testing, docs, final balancing
+- Umar: Final polish suggestions, feedback
+
+### Status
+
+⏳ Upcoming
+
+### Testing
+
+- Final playtest and bug fixes
 
 ---
 
@@ -153,16 +267,18 @@ August 3–10, 2025
 
 | Sprint | Duration | Focus |
 | --- | --- | --- |
-| Sprint 1 | Jul 4–9 | UE5 Setup, TPS movement |
-| Sprint 2 | Jul 10–17 | Player Combat & Scope |
-| Sprint 3 | Jul 18–25 | Map & AI Logic |
-| Sprint 4 | Jul 26–Aug 2 | Game Loop, Stats, DSA |
-| Sprint 5 | Aug 3–10 | Polish, Docs, Final Test |
+| Sprint 1 | Jul 5–11 | UE5 Setup, TPS movement |
+| Sprint 2 | Jul 12–18 | Player Combat & Weapons |
+| Sprint 3 | Jul 19–25 | AI & Initial Map |
+| Sprint 4 | Jul 26–Aug 1 | Map Enhancements & Mini-Map |
+| Sprint 5 | Aug 2–8 | UI, Team Stats, Spectator Mode |
+| Sprint 6 | Aug 9–15 | Reinforcements, Game States, Pause |
+| Sprint 7 | Aug 16–22 | Objective Logic & Testing |
+| Sprint 8 | Aug 23–29 | Polish, Demo, Documentation |
 
 ---
 
-**Repository**: https://github.com/Afffan16/OperationCleanSweep
-
-**Tools**: Unreal Engine 5, GitHub, Notion, Visual Studio 2022, Quixel, Mixamo\
-**Team**: Affan (Lead Dev), Umar (Asset Lead, Support Dev)\
+**Repository**: https://github.com/Afffan16/OperationCleanSweep  
+**Tools**: Unreal Engine 5, GitHub, Notion, Visual Studio 2022, Quixel, Mixamo  
+**Team**: Affan (Lead Dev), Umar (Asset Lead, Support Dev)  
 **Status**: 🛠️ In Development
