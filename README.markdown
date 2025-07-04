@@ -146,7 +146,7 @@ Operation-Clean-Sweep/
 
 ## 📚 Documentation & Resources
 
-- 🌐 **Notion Workspace**: Operation Clean Sweep - Project Hub
+- 🌐 **Notion Workspace**: Operation Clean Sweep - Project Hub ( "https://curvy-gravity-f9f.notion.site/Operation-Clean-Sweep-Project-Hub-22671c25ca5d80969b65c4b43cf2fa35" )
 - **🗃️ Google Drive**: (Link to be added post-completion for source files and assets)
 - 📂 **Planning Documents**: Check the docs/ folder for detailed plans
 
